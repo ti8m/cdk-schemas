@@ -14,7 +14,7 @@
       "type": "object",
       "additionalProperties": {
         "description": "per-service overrides",
-        "$ref": "https://ti8m.ch/environment-definition#/definitions/serviceConfiguration"
+        "$ref": "https://raw.githubusercontent.com/ti8m/cdk-schemas/refs/heads/master/environment-manager/v1/environment-definition.schema.json#/definitions/serviceConfiguration"
       },
       "properties": {
         "image-pull-secret": {
@@ -33,13 +33,13 @@
         "global-template-parameters": {
           "type": "array",
           "items": {
-            "$ref": "https://ti8m.ch/environment-definition#/definitions/templateParameter"
+            "$ref": "https://raw.githubusercontent.com/ti8m/cdk-schemas/refs/heads/master/environment-manager/v1/environment-definition.schema.json#/definitions/templateParameter"
           }
         },
         "template-parameters": {
           "type": "array",
           "items": {
-            "$ref": "https://ti8m.ch/environment-definition#/definitions/templateParameter"
+            "$ref": "https://raw.githubusercontent.com/ti8m/cdk-schemas/refs/heads/master/environment-manager/v1/environment-definition.schema.json#/definitions/templateParameter"
           }
         },
         "hostname": {
@@ -60,7 +60,7 @@
         },
         "resource-quota": {
           "type": "object",
-          "$ref": "https://ti8m.ch/environment-definition#/definitions/resourceSpec",
+          "$ref": "https://raw.githubusercontent.com/ti8m/cdk-schemas/refs/heads/master/environment-manager/v1/environment-definition.schema.json#/definitions/resourceSpec",
           "description": "Specifies resource usage of a container instance"
         },
         "route-mode": {
@@ -102,7 +102,7 @@
             "description": "per-config-set overrides",
             "allOf": [
               {
-                "$ref": "https://ti8m.ch/environment-definition#/definitions/serviceConfiguration"
+                "$ref": "https://raw.githubusercontent.com/ti8m/cdk-schemas/refs/heads/master/environment-manager/v1/environment-definition.schema.json#/definitions/serviceConfiguration"
               }
             ]
           }

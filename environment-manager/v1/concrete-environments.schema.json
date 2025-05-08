@@ -8,7 +8,7 @@
     "all": {
       "type": "object",
       "description": "Common default definitions for all environments which may be overridden by individual environments",
-      "$ref": "https://ti8m.ch/concrete-environment-config#/definitions/concrete-environment-spec"
+      "$ref": "https://raw.githubusercontent.com/ti8m/cdk-schemas/refs/heads/master/environment-manager/v1/concrete-environment-config.schema.json#/definitions/concrete-environment-spec"
     },
     "$schema": {
       "type": "string"
@@ -19,7 +19,7 @@
     "description": "definitions for one specific environment",
     "anyOf": [
       {
-        "$ref": "https://ti8m.ch/concrete-environment-config#/definitions/concrete-environment-spec"
+        "$ref": "https://raw.githubusercontent.com/ti8m/cdk-schemas/refs/heads/master/environment-manager/v1/concrete-environment-config.schema.json#/definitions/concrete-environment-spec"
       },
       {
         "type": "object",
